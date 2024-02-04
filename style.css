@@ -1,0 +1,266 @@
+/* **************dont give "background size : cover "while you want to do transition i.e for zoom in and zoom out*/
+
+
+html {
+    font-size: 0.8rem;
+}
+
+/* navbar */
+
+
+#navbar {
+    box-shadow: 5px 5px 10px red;
+}
+.hovr{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.hovr:hover{
+ color: darkred;
+ font-size: medium;
+}
+body {
+    font-family: montserrat;
+    /* font-weight: 2; */
+}
+
+/* .f_color {
+    background-color: #6c757d;
+    border: none;
+    border-bottom: 0.15rem solid rgb(174, 156, 57);
+
+} */
+.f_color {
+    background: none;
+    background: transparent !important;
+    /*both property works same */
+    border: none;
+    border-bottom: 0.1rem solid rgb(174, 156, 57);
+    color: white !important;
+    margin-bottom: 3rem;
+    /* text-align: ; */
+}
+
+.f_color::placeholder {
+    color: white;
+}
+
+.f_color option {
+    background-color: #4a4e57;
+    /*You can give importat !important */
+}
+
+.mybtn {
+    background-color: rgb(174, 156, 57) !important;
+    border-bottom: 0.1rem solid white;
+}
+
+/* positioning */
+/* #cauresel{
+    position: absolute;
+} */
+@media only screen and (min-width:768px) {
+    #frm-1 {
+        position: relative;
+        right: 0px;
+        top: -2rem;
+    }
+
+}
+
+/* project_hilght */
+#project_hilght {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./bg_img_1.jpg");
+    /* background-image: linear-gradient(0deg,0,0,0,0.3) ,url('bg_img_1.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    color: #fff;
+}
+
+.p_hilght_color {
+    /* opacity:calc(); */
+    /* background-color: black;
+    opacity: 0.4; */
+}
+
+/* Carpet */
+#carpet {
+    background-color: #f5f5f5;
+}
+
+/* Amenities */
+#amen_photo_1 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./Animalies/swimming.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 280px;
+    padding: 2rem 5rem;
+}
+
+#amen_photo_2 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./Animalies/gym.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 280px;
+    padding: 2rem 5rem;
+}
+
+#amen_photo_3 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./Animalies/b1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 280px;
+    padding: 2rem 5rem;
+}
+
+#amen_photo_4 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./Animalies/Squash-court.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 280px;
+    padding: 2rem 5rem;
+}
+
+#amen_photo_5 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./Animalies/boal.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 280px;
+    padding: 2rem 5rem;
+}
+
+#amen_photo_6 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./Animalies/coofe.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 280px;
+    padding: 2rem 5rem;
+}
+
+#amen_photo_7 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./Animalies/last.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 280px;
+    padding: 2rem 5rem;
+}
+
+.amen_back {
+    color: white;
+    font-weight: bold;
+}
+
+.amen-hr:hover {
+    background-size: 180%;
+    /* border:2px solid red; */
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* home_Image */
+
+#home_Image {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("./Animalies/last.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* width: 100%; */
+}
+
+.myhome {
+    color: #fff;
+}
+
+.sub-home:hover {
+    color: rgb(97, 159, 3);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Location */
+.home_li {
+    padding: 0.8rem 0px;
+}
+
+/* Enquire-2 Last */
+#enquire-2 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url("./LastBackImg.webp");
+}
+
+.last-form {
+    color: white;
+}
+
+.myfrm-2 {
+    background: none;
+    background: transparent !important;
+    /*both property works same */
+    border: none;
+    border-bottom: 0.1rem solid white;
+    color: white !important;
+    margin-bottom: 3rem;
+    /* text-align: ; */
+
+}
+
+.myfrm-2::placeholder {
+    color: white;
+}
+
+.myfrm-2 option {
+    background-color: #4a4e57;
+    /*You can give importat !important */
+}
+
+/* Cards */
+    
+    .parent-content:hover .child-content {
+    opacity: 1;
+    margin: 0px;
+    }
+    
+    .child-content {
+    transition: margin 1s, opacity 0.3s ease-in-out;
+    opacity: 0;
+    margin: -80px
+    }
+    /* -------------------------------------------------------- */
+    .c_content{
+        transition: margin 1s,opacity 0.3s ease-in-out;
+        margin: -6.2rem;
+        opacity: 0;
+    }
+    
+    
+    .card_parent:hover .c_content {
+        margin: -1rem ;
+        opacity: 1;
+        /* transition-duration: 2s; */
+        
+    }
+    
+/* side-stick */
+#side-stick {
+    position: fixed;
+    top: 50%;
+    right: -5.8rem;
+    transform: rotate(270deg)
+}
+
+
+#bottom{
+    position: sticky;
+}
+
+
+/* .myfrm,.myfrm:active{
+    background-color: #71737e;
+    border: none;
+    border-bottom: .5px solid rgb(174, 156, 57);
+} */
+/* .f_color:active{
+    background-color:rgb(240, 138, 240);
+} */
